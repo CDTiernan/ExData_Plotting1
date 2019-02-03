@@ -27,7 +27,7 @@ powerDF$DateTime <- as.POSIXct(paste(powerDF$Date, powerDF$Time), format='%d/%m/
 png(filename="plot4.png")
 
 # Set the lattice and reset the margins (just in case the previous graphs messed with them)
-par(mfrow=c(2,2), mar=c(5, 4, 4, 2) + 0.1)
+par(mfrow=c(2,2), bg=NA, mar=c(5, 4, 4, 2) + 0.1)
 
 # TOP LEFT: Same as plot 1
 plot(powerDF$DateTime, powerDF$Global_active_power

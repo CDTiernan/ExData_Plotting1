@@ -27,7 +27,7 @@ powerDF$DateTime <- as.POSIXct(paste(powerDF$Date, powerDF$Time), format='%d/%m/
 png(filename="plot2.png")
 
 # Setting the margins so we get a bit more graph in the output as we dont have an x-axis label
-par(mar=c(2,4,2,2))
+par(mar=c(2,4,2,2), bg=NA)
 
 # Make a line plot (type='l')
 plot(powerDF$DateTime, powerDF$Global_active_power

@@ -23,6 +23,9 @@ powerDF <- powerDF[powerDF$Date %in% c('1/2/2007','2/2/2007'),]
 # Create the plot
 png(filename="plot1.png")
 
+# Make the background of the plot transparent
+par(bg=NA)
+
 # The default histogram works great as is for this plot, just need to make the bars red!
 hist(powerDF$Global_active_power
      , col='red'
