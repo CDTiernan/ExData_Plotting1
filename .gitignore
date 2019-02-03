@@ -1,0 +1,8 @@
+# ignore system files
+.DS_Store
+
+# ignore the data directory
+data/
+
+# ignore where I am putting old files/backups
+ignore/
